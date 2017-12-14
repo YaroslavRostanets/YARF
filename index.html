@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>YARF</title>
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/all.css">
+</head>
+<body>
+    <div class="menu">
+        <a href="/" class="logo">
+           YARF
+        </a>
+        <nav class="nav">
+            <a href="#">
+                Как подключить
+            </a>
+        </nav>
+        <nav class="nav">
+            <a href="#">
+                input[type="radio"]
+            </a>
+            <a href="#">
+                input[type="checkbox"]
+            </a>
+            <a href="#">
+                select
+            </a>
+        </nav>
+        <nav class="nav">
+            <a href="#">modal</a>
+        </nav>
+    </div>
+    <div class="layout">
+        <div class="main">
+            <div class="header">
+                <h1>
+                    Как подключить
+                </h1>
+            </div>
+            <div class="content">
+                <h2 class="content-subhead">Добавь <span class="yarf">YARF</span> к себе на страницу</h2>
+                <p>
+                    Вы можете добавить YARN на свою страницу через CDN.
+                    Просто добавьте следующий элемент <code> &#60;link&#62;</code> в <code>&#60;head&#62;</code>  вашей страницы,
+                    перед таблицами стилей вашего проекта.
+                </p>
+            </div>
+            <div class="is-code-full">
+                <div class="code">
+                    &#60;link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous"&#62;
+                </div>
+            </div>
+            <div class="header">
+                <h1>
+                    input [type="radio"]
+                </h1>
+            </div>
+            <div class="content">
+
+                <div class="example">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" data-yarf type="radio" name="exampleRadios" checked>
+                            Option one is this and that&mdash;be sure to include why it's great
+                        </label>
+                    </div>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" data-yarf type="radio" name="exampleRadios">
+                        Option two can be something else and selecting it will deselect option one
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dist/js/yarf.js"></script>
+</body>
+</html>

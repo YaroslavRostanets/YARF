@@ -1,0 +1,25 @@
+/*--radio btns--*/
+.yarf-radio {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 16px;
+  border: 2px solid grey;
+  position: relative;
+  &.checked {
+    .yarf-radio-marker {
+      display: block;
+    }
+  }
+}
+.yarf-radio-marker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background: grey;
+  display: none;
+}
